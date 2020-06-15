@@ -8,4 +8,8 @@ Train the generator using  nature E. coli core promoters sequences:
 '''
 import gpro
 generator = gpro.Generator.WGAN()
+generator.BuildModel('data/seq_ecoli.txt')
+generator.Train()
 '''
+Train the Predictor
+
