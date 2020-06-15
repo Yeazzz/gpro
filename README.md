@@ -1,10 +1,10 @@
-# GPrO: Generate, Predict and Optimize 3 steps to design artifitial promoters
+# GPrO: Generate, Predict and Optimize 3 steps to design artificial promoters
 ## Install
 `git clone https://github.com/Yeazzz/gpro.git`
 ## Quick Start
 Using over data to quick start Gpro
 ### Demo 1: Design core promoters of E. coli
-In our previous research *'Synthetic promoter design in Escherichia coli based on a deep generative network'*, we designed artifitial promoters which had successfully expressed in E. coli. Using **Gpro** can easily reappear our result.
+In our previous research *'Synthetic promoter design in Escherichia coli based on a deep generative network'*, we designed artificial promoters which had successfully expressed in E. coli. Using **Gpro** can easily reappear our result.
 
 Train the generator using  nature E. coli core promoters sequences:
 ```
@@ -25,7 +25,7 @@ predictor = gpro.Predictors.CNN()
 predictor.BuildModel('data/exp_ecoli.txt')
 predictor.Train()
 ```
-Predict the expression of artifitial promoters:
+Predict the expression of artificial promoters:
 ```
 exp = predictor.Predictor(seq)
 ```
